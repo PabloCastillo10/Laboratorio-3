@@ -1,5 +1,7 @@
 import empresaModel from "./empresa.model.js";
-
+import XLSX from "xlsx";
+import fs from "fs";
+import path from "path";
 
 export const createEmpresa = async (req, res) => {
     try {
@@ -120,4 +122,42 @@ export const updatrEmpresa = async (req, res) => {
             console.error(error);
             res.status(500).json({ message: "Error al actualizar la empresa" });
         }
+}
+
+export const generarReporte = async (req, res) => {
+    try{
+        const empresas = await empresaModel.find();
+
+        if (empresas.length === 0) {
+            return res.status(404).json({ message: "No hay empresas para generar el reporte" });
+        }
+
+        const empresaData = empresas.map(empresa => ({
+            Nombre: empresa.nombre,
+            "Nivel de Impacto": empresa.nivelImpacto,
+            "Años de trayectoria" : empresa.aniosTrayectoria,
+            Categoría: empresa.categoria,
+            Ubicación: empresa.ubicacion,
+            Descripción : empresa.descripcion,
+            Contacto: empresa.contacto
+        }));
+
+        const workbook = XLSX.utils.book_new();
+        const worksheet = XLSX.utils.json_to_sheet(empresaData);
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Empresas");
+
+        XLSX.writeFile(workbook, "Reporte_empresas.xlsx");
+
+
+        
+        res.status(200).json({
+            msg: "Reporte generado correctamente en el archivo Reporte_empresas.xlsx"
+        });
+
+        
+
+    }  catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error al generar el reporte" });
+    }
 }

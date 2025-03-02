@@ -141,4 +141,22 @@
   "updatedAt": {
     "$date": "2025-03-02T20:21:45.391Z"
   }
+},
+{
+  "_id": {
+    "$oid": "67c4e0474957bdc6f9378ffb"
+  },
+  "nombre": "Coca Cola",
+  "nivelImpacto": "ALTO",
+  "aniosTrayectoria": 98,
+  "categoria": "COMERCIAL",
+  "ubicacion": "USA",
+  "descripcion": "La mejor bebida",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T22:48:39.779Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T22:48:39.779Z"
+  }
 }]

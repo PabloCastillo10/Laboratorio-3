@@ -216,13 +216,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxMzVjOTA3NDhhY2U2ZjMzMTRmNzkiLCJpYXQiOjE3NDA5NDYzNTIsImV4cCI6MTc0MDk0OTk1Mn0.lFIDgui-TthLUXOQMYpTNlFavzjGrf_fesmYF9zk0-U",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxMzVjOTA3NDhhY2U2ZjMzMTRmNzkiLCJpYXQiOjE3NDA5NTU2NjgsImV4cCI6MTc0MDk1OTI2OH0.bh6bTMvwoIbX3w6kcLsQTFyBBVaAzyo5BD7opvlI8jw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\" : \"Envases del Istmo\",\r\n    \"nivelImpacto\" : \"MEDIO\",\r\n    \"aniosTrayectoria\" : \"46\",\r\n    \"categoria\" : \"INDUSTRIAL\",\r\n    \"ubicacion\" : \"guatemala\",\r\n    \"contacto\" : \"12345678\",\r\n    \"descripcion\" : \"fabrica envases de aluminio para bebidas\"\r\n}",
+							"raw": "{\r\n    \"nombre\" : \"Coca Cola\",\r\n    \"nivelImpacto\" : \"ALTO\",\r\n    \"aniosTrayectoria\" : \"98\",\r\n    \"categoria\" : \"COMERCIAL\",\r\n    \"ubicacion\" : \"USA\",\r\n    \"contacto\" : \"12345678\",\r\n    \"descripcion\" : \"La mejor bebida\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -402,6 +402,30 @@
 								"empresas",
 								"actualizar",
 								"67c4bbdd99211e8b355fb80f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generar Reporte",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/reporte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								"reporte"
 							]
 						}
 					},
