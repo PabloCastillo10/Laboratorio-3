@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "67c4bbdd99211e8b355fb80f"
+  },
+  "nombre": "Grupo Diamante",
+  "nivelImpacto": "ALTO",
+  "aniosTrayectoria": 5,
+  "categoria": "MINERAL",
+  "ubicacion": "mexico",
+  "descripcion": "Diamantes en cuevas de mexico",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:13:17.709Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:45:12.700Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bc7899211e8b355fb814"
+  },
+  "nombre": "Compañia Guatemalteca Niquel",
+  "nivelImpacto": "ALTO",
+  "aniosTrayectoria": 20,
+  "categoria": "MINERAL",
+  "ubicacion": "guatemala",
+  "descripcion": "Extrae y comercializa mena de níquel para atender el mercado internaciona",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:15:52.978Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:15:52.978Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bcba99211e8b355fb817"
+  },
+  "nombre": "Mina Marlin",
+  "nivelImpacto": "ALTO",
+  "aniosTrayectoria": 30,
+  "categoria": "MINERAL",
+  "ubicacion": "guatemala",
+  "descripcion": " Operada por Goldcorp, esta mina está ubicada en San Marcos",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:16:58.499Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:16:58.499Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bce099211e8b355fb81a"
+  },
+  "nombre": "EXIMINGUA",
+  "nivelImpacto": "ALTO",
+  "aniosTrayectoria": 40,
+  "categoria": "MINERAL",
+  "ubicacion": "guatemala",
+  "descripcion": " Empresa que realiza exploraciones mineras",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:17:36.393Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:17:36.393Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bd2599211e8b355fb81d"
+  },
+  "nombre": "SOPHOS",
+  "nivelImpacto": "BAJO",
+  "aniosTrayectoria": 27,
+  "categoria": "COMERCIAL",
+  "ubicacion": "guatemala",
+  "descripcion": " Librería fundada en 1998",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:18:45.815Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:18:45.815Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bd4e99211e8b355fb820"
+  },
+  "nombre": "Multigroup",
+  "nivelImpacto": "MEDIO",
+  "aniosTrayectoria": 30,
+  "categoria": "COMERCIAL",
+  "ubicacion": "guatemala",
+  "descripcion": " Empresa que ofrece soluciones de acero para la construcción",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:19:26.912Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:19:26.912Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bdb099211e8b355fb823"
+  },
+  "nombre": "Papeleria internacional",
+  "nivelImpacto": "ALTO",
+  "aniosTrayectoria": 60,
+  "categoria": "INDUSTRIAL",
+  "ubicacion": "guatemala",
+  "descripcion": " el mayor fabricante de papel de Guatemala",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:21:04.763Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:21:04.763Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4bdd999211e8b355fb826"
+  },
+  "nombre": "Envases del Istmo",
+  "nivelImpacto": "MEDIO",
+  "aniosTrayectoria": 46,
+  "categoria": "INDUSTRIAL",
+  "ubicacion": "guatemala",
+  "descripcion": "fabrica envases de aluminio para bebidas",
+  "contacto": "12345678",
+  "createdAt": {
+    "$date": "2025-03-02T20:21:45.391Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T20:21:45.391Z"
+  }
+}]

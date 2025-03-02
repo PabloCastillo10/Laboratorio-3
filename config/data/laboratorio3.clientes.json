@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "67c4aa74a85a53385e3ac16b"
+  },
+  "nombre": "pedri",
+  "apellido": "gonzalez",
+  "email": "lmessi@gmail.com",
+  "direccion": "españa",
+  "telefono": "12345678",
+  "estado": false,
+  "createdAt": {
+    "$date": "2025-03-02T18:59:00.511Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T19:04:30.982Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c4aae1a85a53385e3ac16f"
+  },
+  "nombre": "lamine",
+  "apellido": "yamal",
+  "email": "lyamal@gmail.com",
+  "direccion": "españa",
+  "telefono": "12345678",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-02T19:00:49.229Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-02T19:00:49.229Z"
+  }
+}]

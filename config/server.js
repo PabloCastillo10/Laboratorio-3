@@ -7,6 +7,7 @@ import {dbConnection} from './mongo.js';
 import { login } from '../src/Admin/Admin.controller.js';
 import { createAdmin } from '../src/Admin/Admin.controller.js';
 import {clienteRoutes} from '../src/clients/cliente.routes.js'
+import {empresaRoutes} from '../src/empresa/empresa.routes.js'
 const configurarMiddlewares = (app) => {
     app.use(express.urlencoded({extended: false}));
     app.use(cors());
@@ -17,6 +18,7 @@ const configurarMiddlewares = (app) => {
 const configurarRutas = (app) => {
     app.use('/laboratorio3/login', login);
     app.use('/laboratorio3/clientes', clienteRoutes);
+    app.use('/laboratorio3/empresas', empresaRoutes);
    
 }
  const conectarDB = async  () => {

@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "fb926d66-f044-4aee-a458-4d28d55ababd",
+		"name": "Laboratorio 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41636862"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Agregar Cliente",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxMzVjOTA3NDhhY2U2ZjMzMTRmNzkiLCJpYXQiOjE3NDA5NDA3OTcsImV4cCI6MTc0MDk0NDM5N30.CVjdwhh8c9sj4KnZOjULXF26V393ti7JPcu4RMYN0Aw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"lamine\",\r\n    \"apellido\" : \"yamal\",\r\n    \"email\" : \"lyamal@gmail.com\",\r\n    \"direccion\" : \"españa\",\r\n    \"telefono\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Cliente",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/clientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Por Id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/clientes/67c4aa74a85a53385e3ac16b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"clientes",
+								"67c4aa74a85a53385e3ac16b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Cliente",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxMzVjOTA3NDhhY2U2ZjMzMTRmNzkiLCJpYXQiOjE3NDA5NDA3OTcsImV4cCI6MTc0MDk0NDM5N30.CVjdwhh8c9sj4KnZOjULXF26V393ti7JPcu4RMYN0Aw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"pedri\",\r\n    \"apellido\" : \"gonzalez\",\r\n    \"email\" : \"pgonzalez@gmail.com\",\r\n    \"direccion\" : \"españa\",\r\n    \"telefono\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/clientes/67c4aa74a85a53385e3ac16b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"clientes",
+								"67c4aa74a85a53385e3ac16b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivar Cliente",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxMzVjOTA3NDhhY2U2ZjMzMTRmNzkiLCJpYXQiOjE3NDA5NDA3OTcsImV4cCI6MTc0MDk0NDM5N30.CVjdwhh8c9sj4KnZOjULXF26V393ti7JPcu4RMYN0Aw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/clientes/67c4aa74a85a53385e3ac16b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"clientes",
+								"67c4aa74a85a53385e3ac16b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login Default Admin",
+			"item": [
+				{
+					"name": "Logearse Admin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"esantos@gmail.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresa",
+			"item": [
+				{
+					"name": "Agregar Empresas",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxMzVjOTA3NDhhY2U2ZjMzMTRmNzkiLCJpYXQiOjE3NDA5NDYzNTIsImV4cCI6MTc0MDk0OTk1Mn0.lFIDgui-TthLUXOQMYpTNlFavzjGrf_fesmYF9zk0-U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Envases del Istmo\",\r\n    \"nivelImpacto\" : \"MEDIO\",\r\n    \"aniosTrayectoria\" : \"46\",\r\n    \"categoria\" : \"INDUSTRIAL\",\r\n    \"ubicacion\" : \"guatemala\",\r\n    \"contacto\" : \"12345678\",\r\n    \"descripcion\" : \"fabrica envases de aluminio para bebidas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Empresas",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Empresa Por Trayectoria",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/trayectoria/46",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								"trayectoria",
+								"46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Empresa Por Categoria",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/categorias/MINERAL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								"categorias",
+								"MINERAL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Empresas A-Z",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/az",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								"az"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Empresas Z-A",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/za",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								"za"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Empresa",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxMzVjOTA3NDhhY2U2ZjMzMTRmNzkiLCJpYXQiOjE3NDA5NDYzNTIsImV4cCI6MTc0MDk0OTk1Mn0.lFIDgui-TthLUXOQMYpTNlFavzjGrf_fesmYF9zk0-U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Grupo Diamante\",\r\n    \"nivelImpacto\" : \"ALTO\",\r\n    \"aniosTrayectoria\" : \"5\",\r\n    \"categoria\" : \"MINERAL\",\r\n    \"ubicacion\" : \"mexico\",\r\n    \"contacto\" : \"12345678\",\r\n    \"descripcion\" : \"Diamantes en cuevas de mexico\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/laboratorio3/empresas/actualizar/67c4bbdd99211e8b355fb80f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"laboratorio3",
+								"empresas",
+								"actualizar",
+								"67c4bbdd99211e8b355fb80f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
