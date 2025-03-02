@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import { UserSchema } from '../login/login.model.js'
+import AdminModel from '../Admin/Admin.model.js'
 
 export const validarUserJWT = async (req, res, next) => {
 
@@ -14,7 +14,7 @@ export const validarUserJWT = async (req, res, next) => {
     try {
         const { uid } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
 
-        const user = await UserSchema.findById(uid);
+        const user = await AdminModel.findById(uid);
 
         if (!user) {
             return res.status(400).json({
